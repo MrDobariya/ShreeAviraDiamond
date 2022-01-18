@@ -1,0 +1,85 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link href="bootstrap.css" rel="stylesheet" />
+  <style>
+    .heading {
+      text-align: center;
+      font-size: 50px;
+      line-height: 40px;
+      letter-spacing: 2px;
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    span {
+      color: orange;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .img {
+      margin: 0 41%;
+      vertical-align: center;
+    }
+  </style>
+
+</head>
+
+<body background="file:///Volumes/Hard%20Drive/Photos/40-402760_light-color-background-for-website.jpeg">
+  <br><br>
+  <p class="heading"><b><span>Welcome to</span><br> Shree Avira Diamond</b></p>
+  <br><br>
+  <h2>Log-in Form</h2><br>
+  <form action="file:///Volumes/Hard%20Drive/bootstrap-4.0.0-dist/css/First.html" method="post">
+    <div class="img">
+      <img src="file:///Volumes/Hard%20Drive/Photos/avatar1.jpeg" width="250px" height="250px" class="rounded-circle" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <br>
+      <form action="file:///Volumes/Hard%20Drive/bootstrap-4.0.0-dist/css/First.html" class="was-validated">
+        <div class="form-group">
+          <label for="uname">Username:</label>
+          <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember" required> I agree on terms & condition.
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Check this checkbox to continue.</div>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      if(document.uname.value==""){
+        alert("plese enter name");
+        document.uname.focus();
+        return false;
+      }
+    </script>
+
+</body>
+</html>
